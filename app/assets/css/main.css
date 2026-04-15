@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+@theme {
+
+  --animate-background: background-move ease infinite;
+
+  @keyframes background-move {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+    --font-display: "Mulish", "sans-serif";
+
+    --breakpoint-2xl: 1536px;
+    --breakpoint-xl: 1440px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-md: 768px;
+    --breakpoint-sm: 640px;
+
+    --color-primary: #4c85ff;
+    --color-accent: #2466f1;
+    --color-secondary: #697ca6;
+    --color-secondary-dark: #3d4f9f;
+    --color-black: #121212;
+    --color-vio: #7c4cff;
+    --color-warning: #dc3937;
+    --color-white: #ffffff;
+    --color-shadow: #e4ecff;
+    --color-shadow-button: #BCC7FF4b;
+    --color-doctor-card: #E5ECFF;
+
+    --radius-smooth: 40px;
+
+    --swiper-pagination-color: #22f;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-active: #f00;
+    --swiper-pagination-bullet-inactive-color: #aaf;
+    --swiper-pagination-bullet-inactive-opacity: 0.8;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+    --swiper-pagination-bottom: 10px;
+}
+
+body {
+    font-family: "Mulish", "sans-serif";
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -wekit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* font-smooth: always; */
+    @apply bg-[#F5F8FF];
+}
+
+@layer utilities {
+    .hover-shadow-soft-blue:hover {
+        box-shadow: 0px 5px 50px 0px #e4ecff;
+    }
+}
+
+/* V-HTML Content */
+
+.v-html-content {
+    @apply flex flex-col space-y-6;
+}
+
+.v-html-content h2 {
+    @apply text-2xl md:text-4xl font-bold text-secondary-dark leading-8 md:leading-10;
+}
+
+.v-html-content h3 {
+    @apply text-xl md:text-3xl font-bold text-secondary text-balance;
+}
+
+.v-html-content h4 {
+    @apply text-lg md:text-2xl font-medium text-secondary;
+}
+
+
+.v-html-content p {
+    @apply text-base md:text-lg text-black leading-7;
+}
+
+.form > p {
+    @apply text-base! text-black font-light;
+}
+
+
+.v-html-content img {
+    @apply mt-8 rounded-smooth w-full lg:w-3/4;
+}
+
+.v-html-content p > small {
+    @apply block mt-3 text-secondary text-base;
+}
+
+.v-html-content ul > li {
+    @apply text-base md:text-lg leading-6;
+    background: url("/icons/bullet.svg") no-repeat left top;
+    list-style: none;
+    padding: 0px 0px 16px 36px;
+}
+
+.v-html-content blockquote {
+    @apply flex flex-col gap-2 bg-[#F3F7FF] rounded-smooth p-8 space-y-4 text-lg;
+}
+
+.v-html-content blockquote > h3 {
+    @apply text-2xl md:text-3xl font-bold text-primary;
+}
+
+.v-html-content blockquote > h4 {
+    @apply text-xl font-bold text-secondary-dark;
+}
+
+.v-html-content hr {
+    @apply h-1 text-secondary/20;
+}
+
+.v-html-content a {
+    @apply text-primary hover:text-accent underline;
+}
+
+/* list */
+/* В глобальных стилях или в <style scoped> с :global */
+.list-custom-bullets {
+  @apply text-lg leading-6;
+}
+
+.list-custom-bullets > li {
+  background: url("/icons/bullet.svg") no-repeat left top;
+  list-style: none;
+  padding: 0px 0px 16px 36px;
+}
+
+.list-custom-bullets-warning {
+  @apply text-lg leading-6;
+}
+
+.list-custom-bullets-warning > li {
+  background: url("/icons/bullet_warning.svg") no-repeat left top;
+  list-style: none;
+  padding: 0px 0px 16px 36px;
+}
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #e7e7e7bf;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0px 1px 2px #e7e7e7bf;
+}
+
+::-webkit-scrollbar-corner {
+    background: #e7e7e7bf;
+}
