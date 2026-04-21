@@ -4,7 +4,7 @@ import type { Promotion, PromotionsBlock } from "#shared/types/schema";
 const route = useRoute();
 const slug = computed(() => String(route.params.slug));
 const appConfig = useAppConfig();
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 
 const { data, error } = await useFetch<{ promotion: Promotion[] }>(
     `/api/akcii/${slug.value}`,
@@ -142,7 +142,7 @@ useHead({
                     </div>
                 </div>
                 <BaseText :content="promotion?.content" />
-                
+
                 <BaseCTA
                     v-if="
                         promotion?.button &&

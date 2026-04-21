@@ -189,7 +189,7 @@ useHead({
                 <BaseCTA
                     v-if="service?.button && typeof service.button === 'object'"
                     :button="service?.button"
-                    color="#F9DCF9"
+                    color="#E5E2FF"
                 />
             </div>
         </BaseContainer>

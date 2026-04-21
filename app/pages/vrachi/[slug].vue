@@ -166,7 +166,7 @@ const currentBackground = computed(() => {
                     "
                     :button="doctor?.button"
                     text="Записались? Запишитесь!"
-                    color="#D9E5FF"
+                    color="#E2F2FF"
                 />
             </div>
         </BaseContainer>

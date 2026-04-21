@@ -12,7 +12,7 @@ provide('globals', computed(() => siteData.value?.globals));
 </script>
 
 <template>
-    <div class="flex flex-col">
+    <div class="flex flex-col mx-auto">
         <NavigationMain :navigation="siteData.navigation" :globals="siteData.globals"/>
             <slot />
         <Footer :navigation="siteData.navigation" :footer="siteData.footer" :globals="siteData.globals" />

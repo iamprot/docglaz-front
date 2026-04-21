@@ -72,7 +72,7 @@ body {
 /* V-HTML Content */
 
 .v-html-content {
-    @apply flex flex-col space-y-6;
+    @apply flex flex-col space-y-4 md:space-y-6;
 }
 
 .v-html-content h2 {

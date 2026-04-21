@@ -4,7 +4,7 @@ import type { New as News } from "#shared/types/schema";
 const route = useRoute();
 const slug = computed(() => String(route.params.slug));
 const appConfig = useAppConfig();
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 
 const { data, error } = await useFetch<{ news: New; related: News[] }>(
     `/api/blog/${slug.value}`,

@@ -16,7 +16,7 @@ const { getTransformedImage, getFullSizeImage } = useDirectusImage()
 <template>
     <NuxtLink :to="appConfig.routes.PROMOTION(data.slug)">
         <div id="card"
-            class="relative group bg-black/90 hover:bg-black/70 rounded-smooth h-full flex flex-col transition-all overflow-hidden duration-300 hover-shadow-soft-blue">
+            class="relative group bg-black/70 hover:bg-black/50 rounded-smooth h-full flex flex-col transition-all overflow-hidden duration-300 hover-shadow-soft-blue">
 
             <div class="relative flex flex-col gap-2 items-start p-8 rounded-smooth">
                 <div
@@ -25,7 +25,7 @@ const { getTransformedImage, getFullSizeImage } = useDirectusImage()
                     <NuxtTime :datetime="data.date as string" day="numeric" month="long" locale="ru-RU" />
                 </div>
                 <div
-                    class="absolute top-0 right-0 opacity-40 group-hover:scale-105 transition-transform duration-400 ease-in-out w-full">
+                    class="absolute top-0 right-0 opacity-50 mix-blend-lighten group-hover:scale-105 transition-transform duration-400 ease-in-out w-full">
                     <!-- <NuxtImg src="/images/percents.png" width="320" height="310" format="webp" densities="x1 x2" /> -->
                      <NuxtImg :src="getTransformedImage(data.image)" class="cover w-full h-full" />
                 </div>
