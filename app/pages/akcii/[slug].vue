@@ -149,7 +149,7 @@ useHead({
                         typeof promotion.button === 'object'
                     "
                     :button="promotion?.button"
-                    text="Записались? Запишитесь!"
+                    text="Пусть мир будет ярким!"
                     color="#F2E4F9"
                 />
             </div>

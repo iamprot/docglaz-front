@@ -12,7 +12,7 @@ const router = useRouter();
 const variantClasses = computed(() => {
   const variants = {
     solid: 'bg-primary text-white hover:shadow-[0_5px_15px_rgba(188,199,255,0.75)] shadow-none',
-    outline: 'border border-primary text-primary hover:bg-primary hover:text-white'
+    outline: 'border border-primary text-primary hover:bg-primary hover:text-white bg-white/5 backdrop-blur-md'
   };
   return variants[props.data.variant || 'solid'] || variants.solid;
 });

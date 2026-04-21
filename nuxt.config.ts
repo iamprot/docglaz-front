@@ -4,7 +4,7 @@ import { preset } from "node:process";
 
 export default defineNuxtConfig({
     compatibilityDate: "2026-03-24",
-    devtools: { enabled: true },
+    devtools: { enabled: false },
     modules: [
       "@nuxt/eslint",
       "@nuxt/image",

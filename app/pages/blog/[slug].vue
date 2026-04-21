@@ -195,7 +195,7 @@ useSchemaOrg([
                         typeof currentNews.button === 'object'
                     "
                     :button="currentNews?.button"
-                    text="Записались? Запишитесь!"
+                    text="Начните видеть мир красивым!"
                     color="#E1E1FF"
                 />
             </article>

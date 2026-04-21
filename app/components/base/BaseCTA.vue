@@ -9,24 +9,31 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
     color: "#ffffff",
-    text: "Поторопитесь увидеть красоту этого мира!"
+    text: "Поторопитесь увидеть красоту этого мира!",
 });
 </script>
 
 <template>
     <!-- CTA блок -->
+    <!-- <div
+        v-if="button && typeof button === 'object'"
+        :style="`background-color: ${color};`"
+        class="flex flex-col p-8 gap-8 rounded-smooth md:bg-[url(/images/eye.png)] bg-no-repeat bg-right bg-size-[auto_400px] hover:bg-size-[auto_410px] transition-all duration-300"
+    > -->
     <div
         v-if="button && typeof button === 'object'"
         :style="`background-color: ${color};`"
-        class="flex flex-col p-8 gap-8 bg-linear-to-r from-cyan-500 to-blue-500 rounded-smooth md:bg-[url(/images/eye.png)] bg-no-repeat bg-right bg-size-[auto_400px] hover:bg-size-[auto_410px] transition-all duration-300"
+        class="relative flex flex-col p-8 gap-8 rounded-smooth transition-all duration-300 overflow-hidden"
     >
-        <BaseHeadline
-            as="h3"
-            :headline="text"
-            class="text-secondary-dark"
-        />
-        <BaseButton :data="button" />
+        <BaseHeadline as="h3" :headline="text" class="z-10 text-secondary-dark" />
+        <BaseButton :data="button" class="z-10" />
+        <div class="z-1 city-scape absolute w-full bottom-0 right-0 h-[calc(100%)] opacity-40"></div>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.city-scape {
+    background: url('/images/tula01.svg') bottom right no-repeat;
+    background-size: auto 100%;
+}
+</style>

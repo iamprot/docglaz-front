@@ -82,7 +82,7 @@ const swiperOptions = computed(() => ({
                             })
                         "
                         loading="lazy"
-                        :alt="`Slide ${index + 1}`"
+                        :alt="`${index + 1}`"
                         class="w-full h-full object-cover rounded-smooth"
                     />
                 </div>

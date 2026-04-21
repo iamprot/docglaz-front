@@ -80,6 +80,7 @@ body {
 }
 
 .v-html-content h3 {
+    /* text-decoration-style: dashed; */
     @apply text-xl md:text-3xl font-bold text-secondary text-balance;
 }
 
