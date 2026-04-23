@@ -95,22 +95,22 @@ useHead({
                 >
                     <div
                         id="content"
-                        class="order-2 lg:order-1 flex flex-1 flex-col p-8 items-start gap-8"
+                        class="order-2 lg:order-1 flex flex-1 flex-col p-6 md:p-8 items-start gap-8"
                     >
-                        <div class="flex flex-col">
+                        <div class="flex flex-col w-full">
                             <div
-                                class="flex items-center gap-6 text-base uppercase tracking-widest text-secondary mb-8"
+                                class="flex items-center text-base uppercase tracking-widest text-secondary mb-8"
                             >
                                 {{ categoryTitle }}
                             </div>
                             <BaseHeadline
                                 as="h1"
                                 :headline="service?.title"
-                                class="text-balance font-bold! text4xl! md:text-5xl! leading-8! lg:leading-12!"
+                                class="font-bold! text-3xl! md:text-5xl! leading-8! lg:leading-12!"
                             />
                             <p
                                 v-if="service?.description"
-                                class="text-secondary text-base md:text-lg mt-8 line-clamp-3"
+                                class="text-secondary text-base md:text-lg mt-8"
                             >
                                 {{ service?.description }}
                             </p>

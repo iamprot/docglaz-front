@@ -93,13 +93,13 @@ const getCurrentTabData = () => {
 <template>
     <div id="container" ref="container" class="w-full mx-auto bg-white rounded-smooth">
         <!-- Навигация по вкладкам -->
-        <div class="sticky top-0 md:relative bg-white/80 backdrop-blur-md z-20 flex flex-wrap justify-center md:justify-start md:rounded-smooth px-4 md:px-6 py-4 gap-2">
+        <div class="sticky top-0 md:relative bg-white/80 backdrop-blur-md z-20 flex flex-wrap justify-center md:justify-start md:rounded-smooth px-4 md:px-6 py-4 gap-2 rounded-smooth">
             <button
                 v-for="tab in tabsConfig"
                 :key="tab.key"
                 @click="setActiveTab(tab.key)"
                 :class="[
-                    'rounded-smooth px-6 py-4 text-base md:text-lg transition-all duration-300 hover:cursor-pointer',
+                    'rounded-smooth px-6 py-3 md:py-4 text-base md:text-lg transition-all duration-300 hover:cursor-pointer',
                     activeTab === tab.key
                         ? 'text-white bg-primary'
                         : 'text-secondary-dark bg-primary/10 hover:text-accent hover:bg-primary/20',
