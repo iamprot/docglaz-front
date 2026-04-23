@@ -110,9 +110,9 @@ const serviceFields = [
                         "success_message",
                         // "email_recipient"
                     ],
-                },
-            },
-        ],
+                }
+            }
+        ]
     },
 ];
 
