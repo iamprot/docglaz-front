@@ -146,7 +146,7 @@ const getCurrentTabData = () => {
                             {{ idx + 1 }}
                         </span>
                         <!-- Теперь TS знает, что entry - это ListItem, поэтому .item доступен -->
-                        <span class="text-black text-lg v-html-content" v-html="entry.item"></span>
+                        <span class="text-black text-base md:text-lg v-html-content" v-html="entry.item"></span>
                     </li>
                 </ul>
             </div>
