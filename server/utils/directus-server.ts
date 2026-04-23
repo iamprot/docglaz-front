@@ -19,7 +19,7 @@ import {
 import type { Schema } from '#shared/types/schema';
 
 const runtimeConfig = useRuntimeConfig()
-const directusUrl = runtimeConfig.public.directusUrl || 'http://localhost:8055';
+const directusUrl = runtimeConfig.public.directusUrl || 'https://api.doc-glaz.ru';
 const directusToken = runtimeConfig.directusServerToken;
 
 export const directusServer = createDirectus<Schema>(directusUrl, {
