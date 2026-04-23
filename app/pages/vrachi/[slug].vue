@@ -104,7 +104,7 @@ const currentBackground = computed(() => {
 
                     <div
                         id="content"
-                        class="flex flex-1 flex-col p-8 items-start gap-8"
+                        class="flex flex-1 flex-col p-6 md:p-8 items-start gap-8"
                     >
                         <div class="flex flex-col gap-6">
                             <BaseHeadline

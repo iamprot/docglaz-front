@@ -107,7 +107,7 @@ useSchemaOrg([
                 >
                     <div
                         id="content"
-                        class="order-2 lg:order-1 flex flex-1 flex-col p-8 items-start gap-8"
+                        class="order-2 lg:order-1 flex flex-1 flex-col p-6 md:p-8 items-start gap-8"
                     >
                         <div class="flex flex-col">
                             <div
@@ -141,11 +141,11 @@ useSchemaOrg([
                             <BaseHeadline
                                 as="h1"
                                 :headline="currentNews?.title"
-                                class="text-balance font-bold! text-2xl! md:text-4xl! lg:text-5xl! leading-8! md:leading-12!"
+                                class="text-balance font-bold! text-3xl! md:text-4xl! lg:text-5xl! leading-8! md:leading-12!"
                             />
                             <p
                                 v-if="currentNews?.excerpt"
-                                class="text-secondary text-base md:text-lg mt-8 line-clamp-3"
+                                class="text-secondary text-base md:text-lg mt-8"
                             >
                                 {{ currentNews?.excerpt }}
                             </p>

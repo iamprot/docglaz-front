@@ -85,7 +85,7 @@ useHead({
                 >
                     <div
                         id="content"
-                        class="order-2 lg:order-1 flex flex-1 flex-col p-8 items-start gap-8"
+                        class="order-2 lg:order-1 flex flex-1 flex-col p-6 md:p-8 items-start gap-8"
                     >
                         <div class="flex flex-col gap-6">
                             <div
@@ -102,7 +102,7 @@ useHead({
                             <BaseHeadline
                                 as="h1"
                                 :headline="promotion?.title"
-                                class="text-balance font-bold! text-4xl! md:text-5xl! leading-10! lg:leading-12!"
+                                class="font-bold! text-3xl! md:text-5xl! leading-8! lg:leading-12!"
                             />
                             <div class="text-lg text-secondary">
                                 {{ promotion?.description }}

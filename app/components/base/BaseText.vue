@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<BaseText>(), {
         v-if="(as === 'default')"
         :class="[
             {
-                'p-8 bg-white overflow-hidden rounded-smooth': as === 'default' && alignment === 'left',
+                'p-6 md:p-8 bg-white overflow-hidden rounded-smooth': as === 'default' && alignment === 'left',
                 'rounded-smooth': as === 'default' && alignment === 'center',
             },
         ]"

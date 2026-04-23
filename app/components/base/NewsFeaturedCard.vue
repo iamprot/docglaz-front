@@ -20,7 +20,7 @@ const { getTransformedImage } = useDirectusImage();
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
 
       <!-- Левая часть: контент -->
-      <div class="order-2 lg:order-1 p-8 lg:p-12 flex flex-col justify-between">
+      <div class="order-2 lg:order-1 p-6 md:p-8 lg:p-12 flex flex-col justify-between">
         <div>
           <div class="flex items-center gap-6 text-base uppercase tracking-widest text-secondary mb-8">
             <time :datetime="(data.date_created as string)">
@@ -33,7 +33,7 @@ const { getTransformedImage } = useDirectusImage();
             </div>
           </div>
           <BaseHeadline as="h2" :headline="data.title" class="font-bold! text-primary! text-2xl lg:text-5xl!" />
-          <p v-if="data.excerpt" class="text-secondary text-lg mt-8 line-clamp-3">
+          <p v-if="data.excerpt" class="text-secondary text-lg mt-8 line-clamp-4">
             {{ data.excerpt }}
           </p>
         </div>

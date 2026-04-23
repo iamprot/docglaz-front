@@ -26,7 +26,7 @@ const toggle = () => {
       <div class="rounded-smooth overflow-hidden bg-white">
 
         <button @click="toggle"
-          class="w-full py-8 px-8 text-left flex items-center justify-between hover:cursor-pointer transition-colors"
+          class="w-full py-8 px-6 md:px-8 text-left flex items-center justify-between hover:cursor-pointer transition-colors"
           :class="{ 'rounded-b-none': isOpen }">
 
           <h2 class="text-2xl md:text-4xl text-secondary-dark font-bold transition-colors duration-300">
@@ -44,7 +44,7 @@ const toggle = () => {
         <Transition name="slide-fade" @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter"
           @before-leave="beforeLeave" @leave="leave" @after-leave="afterLeave">
           <div v-show="isOpen" class="overflow-hidden">
-            <div class="pb-8 px-8">
+            <div class="pb-8 px-6 md:px-8">
               <div class="max-w-none v-html-content" v-html="content"></div>
             </div>
           </div>
