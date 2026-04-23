@@ -165,7 +165,7 @@ const currentBackground = computed(() => {
                         typeof doctor.button === 'object'
                     "
                     :button="doctor?.button"
-                    text="Записались? Запишитесь!"
+                    text="Вы можете увидеть мир ярче!"
                     color="#E2F2FF"
                 />
             </div>
