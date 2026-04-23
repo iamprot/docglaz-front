@@ -34,10 +34,10 @@ const { getTransformedImage, getImageUrl } = useDirectusImage();
 
             <div
                 id="content"
-                class="borderz-10 flex w-full h-full py-4 pl-4 pr-4 md:p-8 items-start"
+                class="z-10 flex w-full h-full py-3 pl-3 pr-3 md:p-8 items-start"
             >
                 <div
-                    class="text-balance text-secondary-dark text-base md:text-2xl font-bold leading-5.5 md:leading-8"
+                    class="w-full max-w-full min-w-0 text-balance text-secondary-dark text-base md:text-2xl font-bold leading-5.5 md:leading-8"
                 >
                     {{ data.title }}
                 </div>
