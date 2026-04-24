@@ -57,7 +57,7 @@ const buttons = computed(() => {
                         v-motion-slide-visible-once-left
                         :delay="200"
                         :duration="400"
-                        class="text-balance text-center md:text-left text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-secondary-dark mb-4 lg:mb-8"
+                        class="text-balance text-center md:text-left text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-secondary-dark mb-4 lg:mb-8"
                     >
                         {{ data.headline }}
                     </h1>
