@@ -106,7 +106,7 @@ useHead({
                             <BaseHeadline
                                 as="h1"
                                 :headline="service?.title"
-                                class="font-bold! text-3xl! md:text-5xl! leading-8! lg:leading-12!"
+                                class="text-balance font-bold! text-3xl! md:text-5xl! leading-8! lg:leading-12!"
                             />
                             <p
                                 v-if="service?.description"
