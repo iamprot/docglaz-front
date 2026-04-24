@@ -36,11 +36,11 @@ const buttons = computed(() => {
     >
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-[75px]">
             <div
-                class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center min-h-auto lg:min-h-[600px]"
+                class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 px-2 py-8 items-center min-h-auto lg:min-h-[600px]"
             >
                 <!-- Левая колонка: контент -->
                 <div
-                    class="z-10 order-2 lg:order-1 flex flex-col justify-center items-center lg:items-start py-8 lg:py-0"
+                    class="z-10 order-2 lg:order-1 flex flex-col justify-center items-center lg:items-start"
                 >
                     <!-- Tagline -->
                     <span
@@ -57,7 +57,7 @@ const buttons = computed(() => {
                         v-motion-slide-visible-once-left
                         :delay="200"
                         :duration="400"
-                        class="text-balance text-center md:text-left text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-secondary-dark mb-4 lg:mb-8"
+                        class="text-balance text-center lg:text-left text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary-dark mb-4 lg:mb-8"
                     >
                         {{ data.headline }}
                     </h1>
