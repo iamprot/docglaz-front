@@ -4,7 +4,7 @@ import { preset } from "node:process";
 
 export default defineNuxtConfig({
     compatibilityDate: "2026-03-24",
-    devtools: { enabled: false },
+    // devtools: { enabled: false },
     modules: [
       "@nuxt/eslint",
       "@nuxt/image",
@@ -54,7 +54,8 @@ export default defineNuxtConfig({
         blockAiBots: true,
         blockNonSeoBots: true,
         disallow: [
-            "/test",
+            "/politika-konfidencialnosti",
+            "/politika-okazaniya-platnyh-uslug",
             "/admin"
         ]
     },
