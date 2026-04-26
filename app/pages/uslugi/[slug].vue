@@ -3,7 +3,6 @@ import type { Category, Service, ServicesBlock } from "#shared/types/schema";
 
 const route = useRoute();
 const slug = computed(() => String(route.params.slug));
-const appConfig = useAppConfig();
 const config = useRuntimeConfig()
 
 const { data, error } = await useFetch<{ service: Service[] }>(
