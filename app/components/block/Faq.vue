@@ -109,8 +109,8 @@ const afterLeave = (el: Element) => {
                     opacity: 1,
                     y: 0,
                 }"
-                :delay="idx * 200"
-                :duration="300"
+                :delay="idx * 100"
+                :duration="200"
       >
 
         <!-- Кнопка вопроса -->
