@@ -16,7 +16,7 @@ useSchemaOrg([
     defineOrganization({
         name: "Офтальмологическая клиника ДОКГЛАЗ",
         url: "https://www.doc-glaz.ru",
-        telephone: "+7 828 372 73 27",
+        telephone: "+7 (4872) 60 06 10",
         address: [
             defineAddress({
                 streetAddress: "ул. Фрунзе, 13А",
@@ -24,7 +24,7 @@ useSchemaOrg([
                 addressCountry: "RU",
             }),
         ],
-        openingHours: "Пн-Пт 10:00-19:00, Сб: 10:00-18:00, Вск: Вых",
+        openingHours: ["Mo-Fr 10:00-19:00", "Sa 10:00-18:00"],
     }),
     defineWebSite({
         name: "Офтальмологическая клиника ДОКГЛАЗ",

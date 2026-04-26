@@ -129,7 +129,7 @@ onMounted(() => {
                 </div>
 
                 <div
-                    class="flex items-center gap-2 lg:gap-4 w-full justify-end pr-4"
+                    class="flex items-center gap-2 lg:gap-4 w-full justify-end"
                 >
                     <div class="hidden xl:flex items-center gap-2 shrink-0">
                         <component
@@ -147,10 +147,11 @@ onMounted(() => {
                             </span>
                         </a>
                     </div>
-
+                    <NuxtLink :to="telLink"><BaseIconsPhoneSolid class="block md:hidden shrink-0 w-5! h-auto mr-2"/>
+                        </NuxtLink>
                     <ul
                         v-if="globals.social_links"
-                        class="hidden min-[864px]:flex gap-4 pl-6"
+                        class="flex md:hidden min-[840px]:flex flex-row gap-4 mr-4 md:mr-0"
                     >
                         <li
                             v-for="(item, idx) in globals.social_links"
@@ -165,6 +166,7 @@ onMounted(() => {
                             </NuxtLink>
                         </li>
                     </ul>
+                    
                 </div>
 
                 <button
